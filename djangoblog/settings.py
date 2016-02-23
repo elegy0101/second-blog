@@ -56,7 +56,7 @@ ROOT_URLCONF = 'djangoblog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/home/nep/myvenv/djangoblog/blog/templates/blog/',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
