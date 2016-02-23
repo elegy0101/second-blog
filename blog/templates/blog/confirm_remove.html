@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h1>Eliminar post</h1>
+<form method="post">{% csrf_token %}
+    Estas seguro que deseas eliminar el "{{ post.title }}" ?
+    <a href="{% url 'blog.views.post_detail' pk=post.pk %}" class="save btn btn-danger">No, regresar al post</a>
+    <button type="submit" class="save btn btn-danger">Si, eliminar</button>
+</form>
+
+{% endblock %}

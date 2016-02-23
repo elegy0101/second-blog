@@ -10,5 +10,6 @@
     </div>
     {% endif %}
     <a href="{% url 'blog.views.post_edit' pk=post.pk %}"> <span class="glyphicon glyphicon-pencil"></span></a>
+    <a href="{% url 'blog.views.post_remove' pk=post.pk %}"> <span class="glyphicon glyphicon-remove"></span></a>
 </div>
 {% endblock %}
